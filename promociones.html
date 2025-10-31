@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>El Templo del Fútbol - Inicio</title>
+    <title>El Templo del Fútbol - Promociones</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,22 +25,29 @@
         </header>
 
     <main>
-    <div class="container">
-        <h1 class="page-title">Nuestra Historia</h1>
+         <div class="container">
+        <h1 class="page-title">Calculadora de Promociones</h1>
 
-        <div class="nosotros-content">
-            <img src="img/local.jpg" alt="Interior del local El Templo del Fútbol">
-            <div class="nosotros-text">
-                <p>
-                    El Templo del Fútbol nació en el corazón de una galería porteña, fundado por un grupo de coleccionistas y apasionados por la historia del deporte más popular del mundo. No somos solo una tienda; somos un museo viviente dedicado a preservar y compartir la magia de las camisetas que definieron épocas.
-                </p>
-                <p>
-                    Nuestra misión es ofrecer a los hinchas y coleccionistas piezas únicas y de alta calidad, desde las joyas retro de los mundiales hasta los modelos más emblemáticos de los grandes clubes. Cada camiseta en nuestra colección tiene una historia que contar, y nosotros estamos aquí para contártela.
-                </p>
+        <div class="promo-calculadora">
+            <h3>Promo: 10% OFF en compras superiores a $30.000</h3>
+            <p>Ingresá el total de tu compra para ver tu ahorro.</p>
+
+            <div class="form-calculadora">
+                <label for="totalCompra">Total de la Compra:</label>
+                <input type="number" id="totalCompra" placeholder="Ej: 35000">
+
+                <button class="btn" id="btnCalcular">Calcular</button>
+            </div>
+
+            <div id="resultados">
+                <h4>Resumen de tu compra:</h4>
+                <p>Total sin descuento: <strong>$ <span id="res-subtotal">0</span></strong></p>
+                <p>Descuento aplicado (10%): <strong>$ <span id="res-descuento">0</span></strong></p>
+                <p>Total a Pagar: <strong>$ <span id="res-total">0</span></strong></p>
             </div>
         </div>
     </div>
-</main>
+        </main>
 
     <footer>
          <div class="container">
@@ -55,6 +62,9 @@
         </div>
     </div>
         </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/promociones.js"></script>
+    </body>
+</html>
 </body>
 </html>
